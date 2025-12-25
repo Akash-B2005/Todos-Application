@@ -1,0 +1,172 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+/* Top Section */
+.top-session {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.Gretting {
+  font-weight: 400;
+}
+
+.spacial-style {
+  font-weight: 600;
+  color: #ffd369;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  width: 380px;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.card h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+.todo-img {
+  display: block;
+  margin: 10px auto 20px;
+  width: 80px;
+}
+
+/* Input Section */
+.card > div:nth-child(2) {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="search"] {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="search"]:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* Button */
+.btn-style {
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-style:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Todos Container */
+.todos-container {
+  margin-top: 10px;
+}
+
+/* Todo Item (future use) */
+.todo-item {
+  background: #f7f7ff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.todo-item span {
+  font-size: 14px;
+}
+
+.todo-item button {
+  background: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.todo-item button:hover {
+  opacity: 0.8;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Completed Todo */
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Checkbox */
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Dark Mode */
+body.dark {
+  background: linear-gradient(135deg, #1e1e2f, #121212);
+}
+
+body.dark .card {
+  background: #1f1f1f;
+  color: #fff;
+}
+
+body.dark input {
+  background: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark .todo-item {
+  background: #2a2a2a;
+}

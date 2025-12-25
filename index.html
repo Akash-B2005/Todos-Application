@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aks Todos Application</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+  <div>
+    <!-- Top Greeting -->
+    <div class="top-session">
+      <h1 class="Gretting">
+        Hello, <span class="spacial-style">Good Morning</span>
+      </h1>
+      <p class="Gretting">Make your todos productive</p>
+      
+    </div>
+
+    <!-- Card -->
+    <div class="card">
+
+      <div>
+        <h1>To Do List</h1>
+        <img src="logo.png" class="todo-img" />
+        <!-- DARK MODE -->
+      </div>
+
+      <!-- INPUT SECTION -->
+      <div>
+        <input
+          id="todoInput"
+          type="search"
+          placeholder="Add new task..."
+        />
+        <button id="addBtn" class="btn-style">Add</button>
+      </div>
+
+      
+
+      <!-- TODOS -->
+      <div
+        id="todosContainer"
+        class="todos-container"
+      ></div>
+
+    </div>
+    
+  </div>
+
+  <!-- SCRIPT MUST BE LAST -->
+  <script src="index.js"></script>
+
+</body>
+
+</html>
